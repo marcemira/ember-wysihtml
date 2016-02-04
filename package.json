@@ -49,6 +49,6 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config",
-    "demoURL": "http://marcemira.com/ember-wysihtml/index.html",
+    "demoURL": "http://marcemira.com/ember-wysihtml/index.html"
   }
 }
