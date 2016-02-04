@@ -8,6 +8,7 @@ export default Ember.Component.extend({
   
   layout,
   editor: null,
+  pasteHTML: false,
   toolbar: [],
 
   changeEvents: [
