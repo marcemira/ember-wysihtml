@@ -52,6 +52,7 @@ A toolbar is an `Array` of objects defined like this:
     { 
       command: 'someValidCommand', // data-wysihtml5-command
       commandValue: someValue      // data-wysihtml5-command-value
+      commandValueBlank: true      // data-wysihtml5-command-blank-value (boolean)
       action: 'someValidAction',   // data-wysihtml5-action
       title: 'A title',
       iconClass: 'my-icon-class', 
