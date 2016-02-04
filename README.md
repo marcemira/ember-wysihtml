@@ -5,7 +5,7 @@ A working demo can be found at [here](http://marcemira.com/ember-wysihtml).
 
 ## Instalation
 
-Simply run `ember install ember-wysihtml` at your ember proyect root folder.
+Simply run `ember install ember-wysihtml` at your ember project root folder.
 Or `npm install ember-wysihtml --save && ember g ember-wysihtml`.
 
 ## Example Usage

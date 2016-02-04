@@ -11,6 +11,8 @@ export default Ember.Component.extend({
   pasteHTML: false,
   toolbar: [],
 
+  classNames:['wysihtml'],
+
   changeEvents: [
     'change',
     'paste',
