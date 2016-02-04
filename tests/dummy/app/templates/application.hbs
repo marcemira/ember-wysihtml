@@ -1,3 +1,59 @@
-<h2 id="title">Welcome to Ember</h2>
+<h2 id="title">Welcome to ember-wysihtml</h2>
 
-{{outlet}}
+{{wysi-editor
+  content=testContent
+  toolbar=testToolbar
+  pasteHTML=false
+  placeholder="This is a nice placeholder"
+}}
+
+<br>
+<h4>Resultant Code</h4>
+<code>
+  {{testContent}}
+</code>
+<br>
+<h4>Resultant HTML</h4>
+<div class="well">
+  {{{testContent}}}
+</div>
+
+<hr>
+<br><br>
+
+<div class="jumbotron">
+  <div class="container">
+    <h3>Demo code:</h3>
+
+    <h5>Template</h5>
+    <pre>
+      <code class="html">
+      \{{wysi-editor
+        content=testContent
+        toolbar=testToolbar
+        pasteHTML=false
+        placeholder="This is a nice placeholder"
+      }}
+      </code>
+    </pre>
+
+    <h5>Controller</h5>
+    <pre>
+      <code class="javascript">
+      import Ember from 'ember';
+
+      export default Ember.Controller.extend({
+
+        testContent: "Test content",
+
+        testToolbar: [
+          { command: 'bold', title: 'Ctrl+B', iconClass: 'fa fa-bold', iconAlt:'Bold'},
+          { command: 'italic', title: 'Ctrl+I', iconClass: 'fa fa-italic', iconAlt:'Italic' },
+          { command: 'underline', title: 'Ctrl+U', iconClass: 'fa fa-underline', iconAlt:'Underline' }
+        ],
+
+      });
+      </code>
+    </pre>
+  </div>
+</div>

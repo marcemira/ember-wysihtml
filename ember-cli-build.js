@@ -14,5 +14,8 @@ module.exports = function(defaults) {
     behave. You most likely want to be modifying `./index.js` or app's build file
   */
 
+  app.import(app.bowerDirectory + '/wysihtml/dist/wysihtml-toolbar.js');
+  app.import(app.bowerDirectory + '/wysihtml/parser_rules/advanced_and_extended.js');
+
   return app.toTree();
 };

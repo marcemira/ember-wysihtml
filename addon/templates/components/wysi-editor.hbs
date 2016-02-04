@@ -1,0 +1,14 @@
+<div class={{toolbarClasses}}>  
+  {{#each toolbar as |btn|}}
+    <a class={{toolbarCustomBtnClass}}
+       data-wysihtml5-command={{btn.command}}
+       data-wysihtml5-command-value={{btn.commandValue}}
+       data-wysihtml5-action={{btn.action}}
+       title={{btn.title}}
+       >
+     {{#if btn.iconClass}} <i class={{btn.iconClass}}></i> {{else}} {{btn.iconAlt}} {{/if}}
+     </a>
+  {{/each}}
+</div>
+
+<div class="wysi-editor" data-placeholder={{placeholder}}></div>

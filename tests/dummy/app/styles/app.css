@@ -1,0 +1,35 @@
+body{
+  padding: 15px 30px;
+  margin: 0;
+}
+
+#title{
+  margin-bottom: 30px;
+}
+
+.wysi-toolbar{
+  margin-bottom: 5px;
+}
+
+.wysi-toolbar a{
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  border: 1px solid #CCC;
+  text-align: center;
+  color: #666;
+}
+
+.wysi-toolbar a.wysihtml5-command-active{
+  color: #333
+}
+
+.wysi-editor{
+  display: block;
+  width: 600px;
+  min-height: 100px;
+  border: 1px dotted #999;
+  padding: 5px;
+}
