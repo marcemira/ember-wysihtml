@@ -62,7 +62,7 @@ A toolbar is an `Array` of objects defined like this:
   ]
 ```
 
-Check valid command and actions at [http://wysihtml.com/examples](http://wysihtml.com/examples)
+Check valid command and actions at [https://github.com/Voog/wysihtml/blob/master/examples/advanced.html](https://github.com/Voog/wysihtml/blob/master/examples/advanced.html)
 
 ## Contributing
 
