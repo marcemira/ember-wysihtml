@@ -20,6 +20,49 @@ On a template:
 }}
 ```
 
+On a controller/component:
+```javascript
+  myToolbar: [
+    { command: 'bold', title: 'Ctrl+B', iconClass: 'fa fa-bold', iconAlt:'Bold'},
+    { command: 'italic', title: 'Ctrl+I', iconClass: 'fa fa-italic', iconAlt:'Italic' },
+    { command: 'underline', title: 'Ctrl+U', iconClass: 'fa fa-underline', iconAlt:'Underline' }
+  ]
+```
+
+## Component Parameters
+```handlebars
+{{wysi-editor
+  content=someContent
+  toolbar=myToolbar
+  customToolbarClasses="my-custom-toolbar",
+  toolbarCustomBtnClass="wysi-btn"
+  pasteHTML=false
+  placeholder="Some nice place holder"
+  ...  
+}}
+```
+
+## Toolbar setup
+
+A toolbar is an `Array` of objects defined like this:
+
+```javascript
+  myToolbar: [
+    ...
+    { 
+      command: 'someValidCommand', // data-wysihtml5-command
+      commandValue: someValue      // data-wysihtml5-command-value
+      action: 'someValidAction',   // data-wysihtml5-action
+      title: 'A title',
+      iconClass: 'my-icon-class', 
+      iconAlt:'Alt if iconClass not used'
+    },
+    ...
+  ]
+```
+
+Check valid command and actions at [http://wysihtml.com/examples](http://wysihtml.com/examples)
+
 ## Contributing
 
 * `git clone` this repository
