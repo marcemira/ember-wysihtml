@@ -1,8 +1,26 @@
 # Ember-wysihtml
 
-This README outlines the details of collaborating on this Ember addon.
+This a simple ember component that wraps Wysihtml.js library.
+A working demo can be found at [here](http://marcemira.com/ember-wysihtml).
 
-## Installation
+## Instalation
+
+Simply run `ember install ember-wysihtml` at your ember proyect root folder.
+Or `npm install ember-wysihtml --save && ember g ember-wysihtml`.
+
+## Example Usage
+
+On a template:
+```handlebars
+{{wysi-editor
+  content=someContent
+  toolbar=myToolbar
+  pasteHTML=true
+  placeholder="This is a nice placeholder"
+}}
+```
+
+## Contributing
 
 * `git clone` this repository
 * `npm install`
