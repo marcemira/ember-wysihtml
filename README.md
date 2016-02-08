@@ -1,3 +1,5 @@
+[![Ember Observer Score](http://emberobserver.com/badges/ember-wysihtml.svg)](http://emberobserver.com/addons/ember-wysihtml)
+
 # Ember-wysihtml
 
 This a simple ember component that wraps Wysihtml.js library.
